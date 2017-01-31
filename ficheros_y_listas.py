@@ -9,4 +9,6 @@ for usuario in lista_lineas:
     shell = lista_split[-1][:-1]
     print ("user:",login,"=> shell:", shell)
 
+print ("\nNumero de usuarios:", len(lista_lineas))
+
 fich.close()
