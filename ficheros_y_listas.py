@@ -1,0 +1,13 @@
+#!-/usr/bin/python3
+
+fich = open('/etc/passwd','r')
+lista_lineas = fich.readlines()
+
+for usuario in lista_lineas:
+    lista_split = usuario.split(":")
+    login = lista_split[0]
+    shell = lista_split[-1][:-1]
+
+print (root, shell)
+
+fich.close()
