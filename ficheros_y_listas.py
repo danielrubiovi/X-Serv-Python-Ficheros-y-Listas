@@ -7,7 +7,6 @@ for usuario in lista_lineas:
     lista_split = usuario.split(":")
     login = lista_split[0]
     shell = lista_split[-1][:-1]
-
-print (root, shell)
+    print ("user:",login,"=> shell:", shell)
 
 fich.close()
